@@ -8,6 +8,9 @@ deployment "development" {
   inputs = {
     access_key = store.varset.aws_creds.AWS_ACCESS_KEY_ID
     secret_key = store.varset.aws_creds.AWS_SECRET_ACCESS_KEY
+    regions = ["ap-northeast-1"]
+    vpc_name = "cn-stacks-vpc"
+    vpc_cidr = "10.10.10.0/24"
   }
 }
  
