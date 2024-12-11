@@ -6,8 +6,7 @@ component "vpc" {
   version = "0.0.1"
 
   inputs = {
-    vpc_name = var.vpc_name
-    vpc_cidr = var.vpc_cidr
+    vpc_cidr_block = var.vpc_cidr_block
   }
 
   providers = {

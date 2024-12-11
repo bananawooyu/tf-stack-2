@@ -10,7 +10,7 @@ deployment "development" {
     secret_key = store.varset.aws_creds.AWS_SECRET_ACCESS_KEY
     regions = ["ap-northeast-1"]
     # vpc_name = "cn-stacks-vpc"
-    vpc_cidr = "10.10.10.0/24"
+    vpc_cidr_block = "10.10.10.0/24"
   }
 }
  

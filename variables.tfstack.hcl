@@ -2,11 +2,7 @@ variable "regions" {
   type = set(string)
 }
 
-variable "vpc_name" {
-  type = string 
-}
-
-variable "vpc_cidr" {
+variable "vpc_cidr_block" {
   type = string
 }
 
