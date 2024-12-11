@@ -9,3 +9,16 @@ variable "vpc_name" {
 variable "vpc_cidr" {
   type = string
 }
+
+variable "access_key" {
+  description = "AWS access key"
+  type     = string
+  ephemeral = true
+}
+
+variable "secret_key" {
+  description = "AWS sensitive secret key."
+  type     = string
+  sensitive = true
+  ephemeral = true
+}
