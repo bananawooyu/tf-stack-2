@@ -12,3 +12,10 @@ provider "aws" "configurations" {
     region = each.value
   }
 }
+
+provider "aws" "this" {
+  config {
+    access_key = var.access_key
+    secret_key = var.secret_key
+  }
+}

@@ -3,7 +3,7 @@ component "vpc" {
   for_each = var.regions
 
   source = "app.terraform.io/rum-org-korean-air/vpc/aws"
-  version = "2.25.0"
+  version = "2.25.1"
 
   inputs = {
     vpc_name = var.vpc_name
