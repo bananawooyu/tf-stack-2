@@ -9,11 +9,3 @@ variable "vpc_name" {
 variable "vpc_cidr" {
   type = string
 }
-
-variable "tfc_hostname" {
-  type = string
-}
-
-variable "tfc_organization_name" {
-  type = string
-}
