@@ -27,6 +27,6 @@ variable "enable_classiclink" {
   type = bool
 }
 
-variable "eenable_classiclink_dns_support" {
+variable "enable_classiclink_dns_support" {
   type = bool
 }

@@ -8,6 +8,8 @@ component "vpc" {
   inputs = {
     vpc_name = var.vpc_name
     vpc_cidr = var.vpc_cidr
+    enable_classiclink = var.enable_classiclink
+    enable_classiclink_dns_support = var.enable_classiclink_dns_support
   }
 
   providers = {
