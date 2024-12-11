@@ -22,3 +22,11 @@ variable "secret_key" {
   sensitive = true
   ephemeral = true
 }
+
+variable "enable_classiclink" {
+  type = bool
+}
+
+variable "eenable_classiclink_dns_support" {
+  type = bool
+}
