@@ -4,17 +4,17 @@ store "varset" "aws_creds" {
   
 }
 
-deployment "development" {
-  inputs = {
-    access_key = store.varset.aws_creds.AWS_ACCESS_KEY_ID
-    secret_key = store.varset.aws_creds.AWS_SECRET_ACCESS_KEY
-    regions = ["ap-northeast-1"]
-    # vpc_name = "cn-stacks-vpc"
-    vpc_cidr_block = "10.10.10.0/24"
-    enable_classiclink = false
-    enable_classiclink_dns_support = false
-  }
-}
+# deployment "development" {
+#   inputs = {
+#     access_key = store.varset.aws_creds.AWS_ACCESS_KEY_ID
+#     secret_key = store.varset.aws_creds.AWS_SECRET_ACCESS_KEY
+#     regions = ["ap-northeast-1"]
+#     # vpc_name = "cn-stacks-vpc"
+#     vpc_cidr_block = "10.10.10.0/24"
+#     enable_classiclink = false
+#     enable_classiclink_dns_support = false
+#   }
+# }
  
 
 # orchestrate "auto_approve" "safe_plans_dev" {
