@@ -12,6 +12,6 @@ component "vpc" {
   }
 
   providers = {
-    aws     = provider.aws.configurations[each.value]
+    aws     = provider.aws.configurations
   }
 } 
