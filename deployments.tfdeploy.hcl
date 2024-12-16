@@ -8,7 +8,8 @@ deployment "development" {
   inputs = {
     access_key = store.varset.aws_creds.AWS_ACCESS_KEY_ID
     secret_key = store.varset.aws_creds.AWS_SECRET_ACCESS_KEY
-    regions = ["ap-northeast-1"]
+    regions = ["ap-northeast-3"]
+    removed_regions = [ "ap-northeast-1" ]
     vpc_cidr_block = "10.10.10.0/24"
     enable_classiclink = false
     enable_classiclink_dns_support = false

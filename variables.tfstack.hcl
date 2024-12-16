@@ -2,6 +2,10 @@ variable "regions" {
   type = set(string)
 }
 
+variable "removed_regions" {
+  type = set(string)
+}
+
 variable "vpc_cidr_block" {
   type = string
 }
