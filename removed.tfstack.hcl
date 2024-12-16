@@ -6,6 +6,6 @@ removed {
 
     from = component.vpc[each.value]
     providers = {
-        aws = provider.aws.configurations[each.value]
+        aws = provider.aws.configurations
     }
 }
